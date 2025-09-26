@@ -27,6 +27,8 @@ The company wants to analyze ride and payment data to:
 - **Customers** (customer_id, full_name, phone, join_date, city_id)  
 - **Rides** (ride_id, customer_id, driver_id, start_time, end_time, distance_km, duration_min, fare, city_id)  
 - **Payments** (payment_id, ride_id, amount, method, status)
+
+
 References
 
 1. MySQL 8.0 Documentation – Window Functions  
