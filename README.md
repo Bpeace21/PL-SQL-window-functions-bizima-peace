@@ -121,8 +121,13 @@ SQL Code:
 
 Screenshot:  
 <img width="405" height="165" alt="Image" src="https://github.com/user-attachments/assets/d6ffc727-fd64-4859-b56d-fc375343db26" />
+
+Min,Max,Rows Vs Range comparison
+![Image](https://github.com/user-attachments/assets/f26a0938-415b-4b2c-b50c-b2e2da53b7ee)
+
 Explanation:  
 The query calculates cumulative revenue month by month. Revenue grew steadily from January to June, reaching a total of 43,600 by the end of the period.
+
 
 Q5. Month-over-Month Ride Growth
 
@@ -148,6 +153,7 @@ SQL Code:
 
 Screenshot:  
 <img width="539" height="180" alt="Image" src="https://github.com/user-attachments/assets/981595b8-5e9c-4cee-883c-6e506f2310b6" />
+
 
 
 Explanation:  
