@@ -39,6 +39,12 @@ Some of the tables that were created
 ![Image](https://github.com/user-attachments/assets/69ee17cd-3a76-4b3f-b705-d883b974251f)
 
 
+![Image](https://github.com/user-attachments/assets/695f999e-8578-4af3-99b6-f0f4e40758ea)
+
+
+![Image](https://github.com/user-attachments/assets/0a4ba1dc-7ebd-45a4-b82b-802ba2428317)
+
+
 
 
 **Entities and Attributes:**
@@ -173,6 +179,9 @@ The analysis of the SmartRide dataset provided insights into different aspects o
 Academic Integrity Statement
 
 Every source that contributed to this work has been carefully acknowledged and referenced. While I drew upon diverse learning materials and official documentation to deepen my grasp of SQL window functions and their syntax, the adaptation of these ideas to the Smart rides case study is an entirely original undertaking. Mysql references, online tutorials, and course content served as the foundation for technical comprehension, but the creative application of these concepts to a real-world Rwandan retail context arose from my own reasoning and structured analysis.
+
+All sources were properly cited. Implementations and analysis represent original work. No AIgenerated content was copied without attribution or adaptation.
+
 
 References
 
