@@ -177,11 +177,18 @@ References
 2. TutorialsPoint – SQL Window Functions  
 3. GeeksforGeeks – SQL Analytic Functions  
 4. Course Lecture Notes
+
 5.W3Schools – SQL Window Functions Tutorial
+
 6.IBM Knowledge Center – OLAP and Analytic Functions
+
 7.Microsoft SQL Server Documentation – Ranking Functions (Transact-SQL)
+
 8.Mode Analytics SQL Tutorial – Window Functions
+
 9.DataCamp – SQL Window Functions Tutorial
+
 10.Khan Academy – Introduction to SQL Queries and Analysis
+
 11.Journal of Database Management – Articles on SQL Analytics
 
