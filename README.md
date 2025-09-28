@@ -29,6 +29,7 @@ Some of the tables that were created
 
 <img width="291" height="148" alt="Image" src="https://github.com/user-attachments/assets/3d305287-cb80-430e-a442-395fdb485321" />
 
+
 **Entities and Attributes:**
 - **Cities** (city_id, city_name)  
 - **Drivers** (driver_id, full_name, phone, rating, join_date, city_id)  
