@@ -28,6 +28,9 @@ The company wants to analyze ride and payment data to:
 - **Rides** (ride_id, customer_id, driver_id, start_time, end_time, distance_km, duration_min, fare, city_id)  
 - **Payments** (payment_id, ride_id, amount, method, status)
 
+Academic Integrity Statement
+
+Every source that contributed to this work has been carefully acknowledged and referenced. While I drew upon diverse learning materials and official documentation to deepen my grasp of SQL window functions and their syntax, the adaptation of these ideas to the Smart rides case study is an entirely original undertaking. Mysql references, online tutorials, and course content served as the foundation for technical comprehension, but the creative application of these concepts to a real-world Rwandan retail context arose from my own reasoning and structured analysis.
 
 References
 
