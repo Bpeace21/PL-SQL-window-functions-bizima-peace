@@ -98,7 +98,7 @@ Explanation:
 The query calculates cumulative revenue month by month. Revenue grew steadily from January to June, reaching a total of 43,600 by the end of the period.
 
 Q5. Month-over-Month Ride Growth
-
+Growth Percentage calculations
 Functions used: LAG
 
 SQL Code:  
