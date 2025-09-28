@@ -173,9 +173,12 @@ Every source that contributed to this work has been carefully acknowledged and r
 
 References
 
-1. MySQL 8.0 Documentation – Window Functions  
-2. TutorialsPoint – SQL Window Functions  
-3. GeeksforGeeks – SQL Analytic Functions  
+1. MySQL 8.0 Documentation – Window Functions
+   
+2. TutorialsPoint – SQL Window Functions
+   
+3. GeeksforGeeks – SQL Analytic Functions
+   
 4. Course Lecture Notes
 
 5.W3Schools – SQL Window Functions Tutorial
