@@ -36,6 +36,9 @@ Some of the tables that were created
 <img width="291" height="148" alt="Image" src="https://github.com/user-attachments/assets/3d305287-cb80-430e-a442-395fdb485321" />
 
 
+![Image](https://github.com/user-attachments/assets/69ee17cd-3a76-4b3f-b705-d883b974251f)
+
+
 
 
 **Entities and Attributes:**
