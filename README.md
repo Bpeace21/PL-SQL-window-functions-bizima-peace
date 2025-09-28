@@ -189,7 +189,7 @@ Every source that contributed to this work has been carefully acknowledged and r
 All sources were properly cited. Implementations and analysis represent original work. No AIgenerated content was copied without attribution or adaptation.
 
 
-References
+7.References
 
 1. MySQL 8.0 Documentation – Window Functions
    
