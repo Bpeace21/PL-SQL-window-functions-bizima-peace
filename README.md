@@ -20,6 +20,11 @@ The company wants to analyze ride and payment data to:
 ---
 
 ## Database Schema
+Some of the tables that were created 
+<img width="341" height="192" alt="Image" src="https://github.com/user-attachments/assets/4ef8eebf-f30b-419e-b1f3-d437a61fce2e" />
+<img width="347" height="181" alt="Image" src="https://github.com/user-attachments/assets/0f145cfe-0990-4b3a-94e6-1dab4faa91e6" />
+<img width="471" height="274" alt="Image" src="https://github.com/user-attachments/assets/41b90021-1ee0-47f0-a28c-4badbecee513" />
+<img width="291" height="148" alt="Image" src="https://github.com/user-attachments/assets/3d305287-cb80-430e-a442-395fdb485321" />
 **Entities and Attributes:**
 - **Cities** (city_id, city_name)  
 - **Drivers** (driver_id, full_name, phone, rating, join_date, city_id)  
