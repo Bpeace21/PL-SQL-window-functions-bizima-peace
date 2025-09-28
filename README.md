@@ -76,22 +76,24 @@ PAYMENTS: ride_id → RIDES(ride_id)
 Functions used: ROW_NUMBER, RANK, DENSE_RANK, PERCENT_RANK
 
 SQL Code:  
+<img width="845" height="293" alt="Image" src="https://github.com/user-attachments/assets/9dcaae81-3b94-4343-9263-eb565cf251c9" />
 
 
 Screenshot:
 --	
+<img width="639" height="221" alt="Image" src="https://github.com/user-attachments/assets/fe31fb07-2570-4192-88bf-cbd5f79a703b" />
 Explanation:  
 This query ranks drivers by total revenue per city and quarter. It shows top performers like Alice Uwera in Kigali and Grace Mukamana in Musanze, helping identify who to reward each quarter.
 
  Q5. Running Monthly Revenue
 
-Functions used: SUM OVER
+Functions used: SUM OVER,AVG over
 
 SQL Code:  
+<img width="774" height="178" alt="Image" src="https://github.com/user-attachments/assets/f15bc668-524b-4131-b32a-de851262938a" />
 
 Screenshot:  
-
-
+<img width="405" height="165" alt="Image" src="https://github.com/user-attachments/assets/d6ffc727-fd64-4859-b56d-fc375343db26" />
 Explanation:  
 The query calculates cumulative revenue month by month. Revenue grew steadily from January to June, reaching a total of 43,600 by the end of the period.
 
@@ -100,10 +102,10 @@ Q5. Month-over-Month Ride Growth
 Functions used: LAG
 
 SQL Code:  
-
+<img width="833" height="218" alt="Image" src="https://github.com/user-attachments/assets/a114941d-e6d3-47f5-b35e-fe350734c91e" />
 
 Screenshots:  
-
+<img width="334" height="165" alt="Image" src="https://github.com/user-attachments/assets/ac99a3a7-0100-4a85-bfed-cd238eff2873" />
 Explanation:  
 This query compares monthly ride counts with the previous month. The results show a consistent number of rides each month, with no growth or decline during this period.
 
@@ -112,9 +114,11 @@ This query compares monthly ride counts with the previous month. The results sho
 Functions used: NTILE, CUME_DIST
 
 SQL Code:  
+<img width="493" height="275" alt="Image" src="https://github.com/user-attachments/assets/7b082055-1b44-45ba-9d27-1d069810aff0" />
 
 
 Screenshot:  
+<img width="539" height="180" alt="Image" src="https://github.com/user-attachments/assets/981595b8-5e9c-4cee-883c-6e506f2310b6" />
 
 
 Explanation:  
@@ -126,9 +130,10 @@ Functions used: AVG OVER
 
 SQL Code:  
 
+<img width="817" height="294" alt="Image" src="https://github.com/user-attachments/assets/68f3b28b-785e-4303-bfd3-dcc44c151158" />
 
 Screenshot:  
-
+<img width="302" height="149" alt="Image" src="https://github.com/user-attachments/assets/f33223b8-8f5c-4248-ac73-f5d61eb8d466" />
 Explanation:  
 This query smooths out monthly fluctuations in ride duration. The moving average helps identify trends, such as the dip in May followed by a recovery in June.
 
