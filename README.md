@@ -1,4 +1,10 @@
-# SmartRide – PL/SQL (MySQL) Window Functions Assignment
+
+Course: Database Development with PL/SQL (INSY 8311)
+Student: BIZIMA Peace
+Student ID: 27778
+Assignment: Individual Assignment I - Window Functions Mastery Project
+Submission Date: September 28, 2025
+Repository: plsql-window-functions-bizima-peace
 
 ## Business Problem
 SmartRide is a ride-hailing platform operating in Kigali and nearby cities.  
