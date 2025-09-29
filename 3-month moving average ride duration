@@ -1,0 +1,8 @@
+WITH monthly AS (
+  SELECT DATE_FORMAT(start_time,'%Y-%m') AS month, AVG(duration_min) AS avg_duration
+  FROM rides
+  GROUP BY DATE_FORMAT(start_time,'%Y-%m')
+)
+SELECT month, avg_duration,
+       AVG(avg_duration) OVER (ORDER BY month ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS moving_avg_duration
+FROM monthly;
