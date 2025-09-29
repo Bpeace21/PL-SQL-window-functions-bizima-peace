@@ -1,0 +1,66 @@
+CREATE DATABASE IF NOT EXISTS smartride;
+USE smartride;
+
+-- Cities
+CREATE TABLE cities (
+  city_id INT AUTO_INCREMENT PRIMARY KEY,
+  city_name VARCHAR(100) NOT NULL
+);
+
+-- Drivers
+CREATE TABLE drivers (
+  driver_id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(120) NOT NULL,
+  phone VARCHAR(20),
+  rating DECIMAL(3,2),
+  join_date DATE DEFAULT (CURRENT_DATE),
+  city_id INT,
+  FOREIGN KEY (city_id) REFERENCES cities(city_id)
+);
+
+-- Vehicles
+CREATE TABLE vehicles (
+  vehicle_id INT AUTO_INCREMENT PRIMARY KEY,
+  driver_id INT NOT NULL,
+  plate_no VARCHAR(20) UNIQUE,
+  model VARCHAR(100),
+  capacity INT,
+  year_made INT,
+  FOREIGN KEY (driver_id) REFERENCES drivers(driver_id)
+);
+
+-- Customers
+CREATE TABLE customers (
+  customer_id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(120),
+  phone VARCHAR(20),
+  join_date DATE DEFAULT (CURRENT_DATE),
+  city_id INT,
+  FOREIGN KEY (city_id) REFERENCES cities(city_id)
+);
+
+-- Rides
+CREATE TABLE rides (
+  ride_id INT AUTO_INCREMENT PRIMARY KEY,
+  customer_id INT NOT NULL,
+  driver_id INT NOT NULL,
+  start_time DATETIME NOT NULL,
+  end_time DATETIME NOT NULL,
+  distance_km DECIMAL(6,2),
+  duration_min DECIMAL(6,2),
+  fare DECIMAL(8,2),
+  city_id INT NOT NULL,
+  FOREIGN KEY (customer_id) REFERENCES customers(customer_id),
+  FOREIGN KEY (driver_id) REFERENCES drivers(driver_id),
+  FOREIGN KEY (city_id) REFERENCES cities(city_id)
+);
+
+-- Payments
+CREATE TABLE payments (
+  payment_id INT AUTO_INCREMENT PRIMARY KEY,
+  ride_id INT NOT NULL,
+  amount DECIMAL(8,2) NOT NULL,
+  method ENUM('Cash','Card','MobileMoney'),
+  status VARCHAR(20) DEFAULT 'Completed',
+  FOREIGN KEY (ride_id) REFERENCES rides(ride_id)
+);
