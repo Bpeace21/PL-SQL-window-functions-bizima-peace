@@ -1,0 +1,56 @@
+USE smartride;
+
+-- Cities
+INSERT INTO cities (city_name) VALUES ('Kigali'),('Huye'),('Musanze');
+
+-- Drivers
+INSERT INTO drivers (full_name,phone,rating,join_date,city_id) VALUES
+('John Bizimana','0788000011',4.7,'2023-01-05',1),
+('Alice Uwera','0788000012',4.9,'2023-03-15',1),
+('David Ndayisaba','0788000013',4.5,'2024-01-10',2),
+('Grace Mukamana','0788000014',4.6,'2024-02-01',3);
+
+-- Vehicles
+INSERT INTO vehicles (driver_id,plate_no,model,capacity,year_made) VALUES
+(1,'RAC123A','Toyota Corolla',4,2019),
+(2,'RAC456B','Honda Fit',4,2020),
+(3,'RAB789C','Suzuki Alto',4,2018),
+(4,'RAB555D','Toyota Prius',4,2021);
+
+-- Customers
+INSERT INTO customers (full_name,phone,join_date,city_id) VALUES
+('Eric Mugisha','0788111111','2023-05-01',1),
+('Sylvie Uwase','0788222222','2023-06-12',1),
+('Patrick Iradukunda','0788333333','2023-07-20',2),
+('Marie Claire','0788444444','2023-09-15',3),
+('Josephine Ingabire','0788555555','2024-02-10',1);
+
+-- Rides (Jan–Jun 2025)
+INSERT INTO rides (customer_id,driver_id,start_time,end_time,distance_km,duration_min,fare,city_id) VALUES
+(1,1,'2025-01-10 08:30:00','2025-01-10 08:50:00',5.2,20,2500,1),
+(2,2,'2025-01-15 09:00:00','2025-01-15 09:20:00',6.0,20,2800,1),
+(3,3,'2025-02-05 14:00:00','2025-02-05 14:30:00',10.0,30,4000,2),
+(4,4,'2025-02-10 16:00:00','2025-02-10 16:45:00',12.0,45,5000,3),
+(1,2,'2025-03-03 07:30:00','2025-03-03 07:55:00',7.5,25,3200,1),
+(5,1,'2025-03-20 18:00:00','2025-03-20 18:20:00',5.0,20,2500,1),
+(2,3,'2025-04-05 12:00:00','2025-04-05 12:25:00',9.0,25,3600,2),
+(3,4,'2025-04-15 19:00:00','2025-04-15 19:40:00',15.0,40,6000,3),
+(4,1,'2025-05-01 08:00:00','2025-05-01 08:15:00',4.5,15,2000,1),
+(5,2,'2025-05-15 09:30:00','2025-05-15 09:50:00',6.5,20,2700,1),
+(1,3,'2025-06-05 10:00:00','2025-06-05 10:40:00',13.0,40,5500,2),
+(2,4,'2025-06-18 21:00:00','2025-06-18 21:30:00',8.0,30,3800,3);
+
+-- Payments
+INSERT INTO payments (ride_id,amount,method,status) VALUES
+(1,2500,'MobileMoney','Completed'),
+(2,2800,'Card','Completed'),
+(3,4000,'Cash','Completed'),
+(4,5000,'MobileMoney','Completed'),
+(5,3200,'Card','Completed'),
+(6,2500,'Cash','Completed'),
+(7,3600,'MobileMoney','Completed'),
+(8,6000,'Card','Completed'),
+(9,2000,'Cash','Completed'),
+(10,2700,'MobileMoney','Completed'),
+(11,5500,'Card','Completed'),
+(12,3800,'MobileMoney','Completed');
