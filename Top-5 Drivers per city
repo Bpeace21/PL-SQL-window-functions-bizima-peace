@@ -1,0 +1,15 @@
+WITH driver_revenue AS (
+  SELECT d.full_name, c.city_name,
+         CONCAT(YEAR(r.start_time), '-Q', QUARTER(r.start_time)) AS quarter,
+         SUM(r.fare) AS total_revenue
+  FROM rides r
+  JOIN drivers d ON r.driver_id = d.driver_id
+  JOIN cities c ON r.city_id = c.city_id
+  GROUP BY d.full_name, c.city_name, CONCAT(YEAR(r.start_time), '-Q', QUARTER(r.start_time))
+)
+SELECT city_name, quarter, full_name, total_revenue,
+       ROW_NUMBER() OVER (PARTITION BY city_name, quarter ORDER BY total_revenue DESC) AS rn,
+       RANK() OVER (PARTITION BY city_name, quarter ORDER BY total_revenue DESC) AS rnk,
+       DENSE_RANK() OVER (PARTITION BY city_name, quarter ORDER BY total_revenue DESC) AS dense_rnk,
+       PERCENT_RANK() OVER (PARTITION BY city_name, quarter ORDER BY total_revenue DESC) AS pct_rnk
+FROM driver_revenue;
